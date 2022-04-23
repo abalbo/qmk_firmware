@@ -40,7 +40,12 @@
 
 #define PRODUCT Onekey Blackpill STM32F401
 
-#define SPLIT_HAND_PIN C13
+//#define SPLIT_HAND_PIN C13
+
+#define MASTER_LEFT
+#define SPLIT_USB_DETECT
+
+//#define USB_VBUS_PIN        A9
 
 //#define USE_I2C
 //#define I2C_DRIVER I2CD1
@@ -56,9 +61,10 @@
 #define DIODE_DIRECTION COL2ROW
 
 #define MATRIX_COL_PINS { B8, B9, B10, B12, B13, B14, B15 }
-#define MATRIX_ROW_PINS { B0, B1, B2, B3, B4, B5 }
-#define MATRIX_COL_PINS_RIGHT { B8, B9, B10, B12, B13, B14, B15, A0, A1, A2 }
-#define MATRIX_ROW_PINS_RIGHT { B0, B1, B2, B3, B4, B5 }
+#define MATRIX_ROW_PINS { B0, B1, A6, B3, B4, B5 }
+//#define MATRIX_COL_PINS_RIGHT { B8, B9, B10, B12, B13, B14, B15, A10, A11 }
+#define MATRIX_COL_PINS_RIGHT { A1, A11, A10, B15, B14, B13, B12, B10, B9, B8}
+#define MATRIX_ROW_PINS_RIGHT { B0, B1, A6, B3, B4, B8 }
 #define UNUSED_PINS
 
 //#define BACKLIGHT_PIN         A0
@@ -86,3 +92,8 @@
 #define SERIAL_USART_TX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
 #define SERIAL_USART_RX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
 #define SERIAL_USART_TIMEOUT 20    // USART driver timeout. default 20
+
+#define ENCODERS_PAD_A { A3 }
+#define ENCODERS_PAD_B { A4 }
+
+#define ENCODER_RESOLUTIONS { 4, 2 }

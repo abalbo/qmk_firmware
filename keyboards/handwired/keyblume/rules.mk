@@ -8,6 +8,8 @@ KEYBOARD_SHARED_EP = yes
 CONSOLE_ENABLE = yes
 SPLIT_KEYBOARD = yes
 
+ENCODER_ENABLE = yes
+
 SERIAL_DRIVER = usart
 # Build Options
 #   change yes to no to disable
