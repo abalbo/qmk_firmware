@@ -18,22 +18,28 @@
 
 #include "quantum.h"
 
-#define XXX KC_NO
+//#define XXX KC_NO
 
 #define LAYOUT_split70( \
-    K00, K01, K02, K03, K04, K05, K06, K08, K09, K0A, K0B, K0C, K0D, K0E, K0F, K0G, \
-    K10, K11, K12, K13, K14, K15, K16, K18, K19, K1A, K1B, K1C, K1D, K1F, K1G, \
-    K20, K21, K22, K23, K24, K25, K28, K29, K2A, K2B, K2C, K2D, K2E, K2F, K2G, \
-    K30, K31, K32, K33, K34, K35, K38, K39, K3A, K3B, K3C, K3D, K3E, K3G, \
-    K40, K41, K42, K43, K44, K45, K46, K48, K49, K4A, K4B, K4C, K4E, K4F, K4G, \
-    K50, K51, K52, K54, K59, K5B, K5C, K5D, K5E, K5F, K5G  \
-) { \
-    { K00, K01, K02, K03, K04, K05, K06, XXX, K08, K09, K0A, K0B, K0C, K0D, K0E, K0F, K0G }, \
-    { K10, K11, K12, K13, K14, K15, K16, XXX, K18, K19, K1A, K1B, K1C, K1D, XXX, K1F, K1G }, \
-    { K20, K21, K22, K23, K24, K25, XXX, XXX, K28, K29, K2A, K2B, K2C, K2D, K2E, K2F, K2G }, \
-    { K30, K31, K32, K33, K34, K35, XXX, XXX, K38, K39, K3A, K3B, K3C, K3D, K3E, XXX, K3G }, \
-    { K40, K41, K42, K43, K44, K45, K46, XXX, K48, K49, K4A, K4B, K4C, XXX, K4E, K4F, K4G }, \
-    { K50, K51, K52, XXX, K54, XXX, XXX, XXX, XXX, K59, XXX, K5B, K5C, K5D, K5E, K5F, K5G }, \
-}
+    LA3, LA4, LA5, LA6, LA7, LA8, LA9,      RA1, RA2, RA3, RA4, RA5, RA6, RA7, RA8, RA9, \
+    LB3, LB4, LB5, LB6, LB7, LB8, LB9,      RB1, RB2, RB3, RB4, RB5, RB6, RB8, RB9, \
+    LC3, LC4, LC5, LC6, LC7, LC8,           RC1, RC2, RC3, RC4, RC5, RC6, RC7, RC8, RC9, \
+    LD3, LD4, LD5, LD6, LD7, LD8,                RD1, RD2, RD3, RD4, RD5, RD6, RD7, RD9, \
+    LE3, LE4, LE5, LE6, LE7, LE8, LE9,      RE1, RE2, RE3, RE4, RE5, RE7, RE8, RE9, \
+    LF3, LF4, LF5, LF7,                     RF2, RF4, RF5, RF6, RF7, RF8, RF9 \
+    )  { \
+        { KC_NO, KC_NO, LA3, LA4, LA5, LA6, LA7, LA8, LA9 }, \
+        { KC_NO, KC_NO, LB3, LB4, LB5, LB6, LB7, LB8, LB9 }, \
+        { KC_NO, KC_NO, LC3, LC4, LC5, LC6, LC7, LC8, KC_NO }, \
+        { KC_NO, KC_NO, LD3, LE4, LD5, LD6, LD7, LD8, KC_NO }, \
+        { KC_NO, KC_NO, LE3, LE4, LE5, LE6, LE7, LE8, LE9 }, \
+        { KC_NO, KC_NO, LF3, LF4, LF5, KC_NO, LF7, KC_NO, KC_NO }, \
+        { RA1, RA2, RA3, RA4, RA5, RA6, RA7, RA8, RA9 }, \
+        { RB1, RB2, RB3, RB4, RB5, RB6, KC_NO, RB8, RB9 }, \
+        { RC1, RC2, RC3, RC4, RC5, RC6, RC7, RC8, RC9 }, \
+        { RD1, RD2, RD3, RD4, RD5, RD6, RD7, KC_NO, RD9 }, \
+        { RE1, RE2, RE3, RE4, RE5, KC_NO, RE7, RE8, RE9 }, \
+        { KC_NO, RF2, KC_NO, RF4, RF5, RF6, RF7, RF8, RF9 } \
+    }
 
 

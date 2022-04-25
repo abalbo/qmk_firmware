@@ -6,9 +6,11 @@ BOOTLOADER = stm32-dfu
 
 KEYBOARD_SHARED_EP = yes
 CONSOLE_ENABLE = yes
-SPLIT_KEYBOARD = yes
+#SPLIT_KEYBOARD = yes
 
-SERIAL_DRIVER = usart
+#ENCODER_ENABLE = yes
+
+#SERIAL_DRIVER = usart
 # Build Options
 #   change yes to no to disable
 #
@@ -21,6 +23,6 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
 
-DEFAULT_FOLDER = handwired/keyblume
+DEFAULT_FOLDER = handwired/keyblume_v2
 
 LAYOUTS = split_70

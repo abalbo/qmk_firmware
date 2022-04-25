@@ -1,5 +1,6 @@
 # MCU name
-MCU = atmega32u4
+MCU = STM32F401
+
 
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no        # Mouse keys

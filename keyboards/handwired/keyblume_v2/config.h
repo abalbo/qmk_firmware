@@ -40,9 +40,9 @@
 
 #define PRODUCT Onekey Blackpill STM32F401
 
-#define SPLIT_HAND_PIN C13
+//#define SPLIT_HAND_PIN C13
 
-#define MASTER_LEFT
+//#define MASTER_RIGHT
 //#define SPLIT_USB_DETECT
 
 //#define USB_VBUS_PIN        A9
@@ -54,17 +54,15 @@
 //#define I2C1_SDA_PIN B7
 //#define I2C1_SDA_PAL_MODE 4
 
-#define MATRIX_ROWS 12
+#define MATRIX_ROWS 6
 #define MATRIX_COLS 9
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-#define MATRIX_COL_PINS { A10, A11, B8, B9, B10, B12, B13, B14, B15 }
+#define MATRIX_COL_PINS { B8, B9, B10, B12, B13, B14, B15, A10, A11 }
 #define MATRIX_ROW_PINS { B0, B1, A6, B3, B4, B5 }
 //#define MATRIX_COL_PINS_RIGHT { B8, B9, B10, B12, B13, B14, B15, A10, A11 }
-#define MATRIX_COL_PINS_RIGHT { A11, A10, B15, B14, B13, B12, B10, B9, B8}
-#define MATRIX_ROW_PINS_RIGHT { B0, B1, A6, B3, B4, B8 }
 #define UNUSED_PINS
 
 //#define BACKLIGHT_PIN         A0
@@ -82,18 +80,18 @@
 //#define SERIAL_USART_PIN_SWAP    // Swap TX and RX pins if keyboard is master halve.
                                    // Check if this feature is necessary with your keyboard design and available on the mcu.
 #define SELECT_SOFT_SERIAL_SPEED 1 // or 0, 2, 3, 4, 5
-                                   //  0: 460800 baud
-                                   //  1: 230400 baud (default)
-                                   //  2: 115200 baud
-                                   //  3: 57600 baud
-                                   //  4: 38400 baud
-                                   //  5: 19200 baud
-#define SERIAL_USART_DRIVER SD1    // USART driver of TX and RX pin. default: SD1
-#define SERIAL_USART_TX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
-#define SERIAL_USART_RX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
-#define SERIAL_USART_TIMEOUT 20    // USART driver timeout. default 20
-
-// #define ENCODERS_PAD_A_RIGHT { A3 }
-// #define ENCODERS_PAD_B_RIGHT { A4 }
-// 
-// #define ENCODER_RESOLUTIONS { 4, 2 }
+//                                   //  0: 460800 baud
+//                                   //  1: 230400 baud (default)
+//                                   //  2: 115200 baud
+//                                   //  3: 57600 baud
+//                                   //  4: 38400 baud
+//                                   //  5: 19200 baud
+//#define SERIAL_USART_DRIVER SD1    // USART driver of TX and RX pin. default: SD1
+//#define SERIAL_USART_TX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
+//#define SERIAL_USART_RX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
+//#define SERIAL_USART_TIMEOUT 20    // USART driver timeout. default 20
+//
+//#define ENCODERS_PAD_A { A3 }
+//#define ENCODERS_PAD_B { A4 }
+//
+//#define ENCODER_RESOLUTIONS { 4, 2 }

@@ -1,4 +1,4 @@
-#include "keyblume.h"
+#include "keyblume_v2.h"
 #include QMK_KEYBOARD_H
 
 void board_init(void) {
