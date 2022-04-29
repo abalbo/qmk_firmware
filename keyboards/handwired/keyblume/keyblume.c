@@ -14,3 +14,19 @@ void keyboard_post_init_user(void) {
   //debug_keyboard=true;
   //debug_mouse=true;
 }
+
+bool is_keyboard_master(void) {
+    static bool determined = false;
+    static bool is_master;
+    if (!determined) {
+        determined = true;
+        setPinInput(SPLIT_PLUG_DETECT_PIN);
+        wait_ms(1);
+        is_master = (bool)readPin(SPLIT_PLUG_DETECT_PIN);
+        if (!is_master) {
+            usbStop(&USBD1);
+        }
+    }
+
+    return is_master;
+}
